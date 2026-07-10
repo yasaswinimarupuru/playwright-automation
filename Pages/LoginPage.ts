@@ -1,7 +1,9 @@
-import { page } from '@playwright/test';
+import { Page } from '@playwright/test';
+
 export class LoginPage {
-  constructor (private Page: Page) {}
-  async goto LoginPage() {
-    await this. page. goto ('https:// google.com');
+  constructor(private page: Page) {}
+
+  async gotoLoginPage() {
+    await this.page.goto('https://www.google.com');
   }
 }
